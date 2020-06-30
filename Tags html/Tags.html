@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags HTML</title>
+</head>
+<body>
+    <h1>Títulos e Subtítulos:</h1>
+    <p>As tags de título funcionam de forma hierárquica crescente, onde a tag <b>"h1"</b> é mais importante que a tag <b>"h2"</b> e etc. Cada tag h tbm tem um tamanho<br> diferente entre elas. Visualmente as tags de título não tem diferenca, porém há valor semântico.</p>
+    <br>
+    
+    <h1>Parágrafos:</h1>
+    <p>
+        Os parágrafos são representados pela tag <b>"p"</b> e vão até o final da página. Para fazer uma quebra de linha manual é utilizada a tag <b>"br"</b>. Essa TAG não possui fechamento. <br> <br>
+        Para deixar uma palavra ou frase em negrito é utilizada a tag <b>"b"</b>.
+    </p>
+    <br>
+
+    <h1>Listas:</h1>
+    <h2>Não ordenadas</h2>
+    <p>As listas NÃO ordenadas são feitas com a tag <b>"ul"</b>, para adicionar uma lista Ñ ordenada e a tag <b>"li"</b> para representar os Itens da lista. <br> EX.:</p>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    <h2>Ordenadas</h2>
+    <p>Parte do mesmo princípio das listas não ordenadas, porém a tag que forma a lista é a <b>"ol"</b>. A lista ordenada vem com um type padrão como "1", mas pode receber diversos atributos no <b>type</b>. <br>EX.:</p>
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+    <ol type="i">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+    <ol type="a">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+    <h2>Listas de descrição</h2>
+    <p>Esse tipo de lista é declarado com a tag <b>"dl"</b>. Sua diferença dos outros é que essa lista recebe um ITEM e uma Descrição do item, utilizando as tags <b>"dt"</b> e <b>"dd"</b>, respectivamente. <br> EX.:</p>
+    <dl>
+        <dt>Item 1:</dt>
+        <dd>Descrição do item 1.</dd>
+        <dt>Item 2:</dt>
+        <dd>Descrição do item 2.</dd>
+        <dt>Item 3:</dt>
+        <dd>Descrição do item 3.</dd>
+    </dl>
+    <p>Lembrando que também é possível colcoar listas dentro de outras listas.</p>
+    <br>
+
+    <h1>Imagens:</h1>
+    <p>Para implementar imagens no seu HTML é utilizada a tag <b>"img"</b>, ela não tem fechamento. O atributo usado para selecionar a imagem desejada é o <b>"src"</b>, onde você informa o caminho da imagem e o formato da imagem. <br>EX.:</p>
+    <img src="/img2/html.jpg">
+    <p>Caso sua imagem fique ENORME, você pode utilizar o atributo <b>"width"</b> para alterar o tamanho da imagem. <br> EX.:</p>
+    <img src="/img2/html.jpg" width="150px">
+    <p>É muito importante que sua imagem esteja na mesma pasta que o arquivo HTML. É recomendado criar uma pasta para suas imagens nesse diretório afim de organizar seu trabalho.</p>
+</body>
+</html>
