@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Lucas Eduardo">
+    <meta name="keywords" content="guiaHTML, HTML,TagsHTML,HTML5">
+    <meta name="description" content="Página criada para servir como um Guia das tags do HTML para mim mesmo ou qualquer outra pessoa que veja.">
+
     <title>Tags HTML</title>
 </head>
 <body>
@@ -61,5 +65,112 @@
     <p>Caso sua imagem fique ENORME, você pode utilizar o atributo <b>"width"</b> para alterar o tamanho da imagem. <br> EX.:</p>
     <img src="/img2/html.jpg" width="150px">
     <p>É muito importante que sua imagem esteja na mesma pasta que o arquivo HTML. É recomendado criar uma pasta para suas imagens nesse diretório afim de organizar seu trabalho.</p>
+    <br>
+
+    <h1>Iframe:</h1>
+    <p>Recurso HTML que permite a inserção de uma página web dentro de outra. É utilizado a tag <b>"iframe"</b> e os atributos <b>"src, width e heigth"</b>. <br>EX.:</p>
+    <iframe width="500px" height="500px" src="https://www.cifraclub.com.br/"></iframe>
+    <br>
+
+    <h1>Links:</h1>
+    <p>Links são pontos clicavei em uma página. <br>
+    Para criar esse ponto clicável é necessária a utilização da tag <b>"a"</b> e o atributo <b>"href"</b> para indicar o direcionamento do clique. É utilizado o atributo <b>target="_blank"</b> para abrir em uma nova aba. <br>EX.:</p>
+    <a href="/pagina2.html">Link interno</a> <br><br>
+    <a href="/pagina2.html" target="_blank">Link interno 
+    aberto em nova aba</a> <br><br>
+    <a href="https://www.google.com/" target="_blank">Link externo</a>
+    <br><br>
+
+    <h1>Tabelas:</h1>
+    <p>
+        Para a criação de tabelas é necessário várias tags.<br>
+        Primeiramente é necessário a criação da tag <b>table e /table</b>. Entre ela é criada a tag <b>caption</b> para colocar um título na tabela. Para criar uma linha use a tag <b>tr</b>. Para a criação titulos de colunas utilize <b>th</b> e para preencher dados nas linhas abaixo utilize <b>td</b>. <br>EX.:
+    </p>
+    <table>
+        <caption>Cadastro de Usuários</caption>
+        <tr>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>Telefone</th>
+        </tr>
+        <tr>
+            <td>Lucas</td>
+            <td>contato@gamil.com</td>
+            <td>(99)99999-9999</td>
+        </tr>
+    </table> <br>
+    <p>Com a utilização de estilo, pra melhorar a visualização ficaria:</p>
+    <table class="b">
+        <caption>Cadastro de Usuários</caption>
+        <tr class="b">
+            <th class="b">Nome</th>
+            <th class="b">Email</th>
+            <th class="b">Telefone</th>
+        </tr>
+        <tr class="b">
+            <td class="b">Lucas</td>
+            <td class="b">contato@gmail.com</td>
+            <td class="b">(99)99999-9999</td>
+        </tr>
+    </table>
+    <style>
+        .b{border: 1px solid black}
+        th, td{ padding: 5px;}
+    </style>
+    <br>
+    <p>Formatações adicionais:</p>
+    <table class="b">
+        <caption>Cadastro de Usuários</caption>
+        <tr class="b">
+            <th class="b">Nome</th>
+            <th class="b">Email</th>
+            <th class="b">Telefone</th>
+            <th class="b">Cargo</th>
+        </tr>
+        <tr class="b">
+            <td class="b">Lucas</td>
+            <td class="b">contato@gmail.com</td>
+            <td class="b">(99)99999-9999</td>
+            <td class="b" rowspan="2">Desenvolvedor Web</td>
+        </tr>
+        <tr class="b">
+            <td class="b">Lucas2</td>
+            <td class="b">contato2@gmail.com</td>
+            <td class="b">(99)99999-9998</td>
+        </tr>
+        <tr class="b">
+            <td class="b" colspan="4">total: 2</td>
+        </tr>
+    </table>
+    <p>Para melhor organizar suas tabelas é interessante utilizar sessões, por exemplo o Body que é dividido entre  Header, Section e Footer, assim tbm criamos as tags <b>thead, tbody e tfoot</b>.</p>
+    <br>
+
+    <h1>Div e Span:</h1>
+    <p>Div é um bloco ou uma divisão que serve como recipiente para outros elementos HTML. <br>
+    Span é um elemento que serve geralmente para envolver imagens, pedaços de texto e etc. <br>EX.: Utilizando um estilo para melhor visualização da div...</p>
+    <div>
+        <h3>Exemplo de texto dentro de uma div:</h3>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <span>Lorem Ipsum</span> has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+    </div>
+    <style>
+        div{background-color: silver; padding: 10px;}
+        span{color:red;background-color: rgba(8, 8, 8, 0.24);}
+    </style>
+    <br><br>
+
+    <h1>Tags meta:</h1>
+    <p>As tags meta possuem diversos atributos. O mais conhecido é o "charset". Outro atributos são:</p>
+    <dl>
+        <b><dt>name="description"</dt></b>
+        <dd>Utilizado para adicionar uma descrição a sua página.</dd>
+        <b><dt>name="keywords"</dt></b>
+        <dd>Adicionar palavras chaves à sua página.</dd>
+        <b><dt>name="author"</dt></b>
+        <dd>Adicionar o criador da página.</dd>
+        <b><dt>http-equiv="refresh"</dt></b>
+        <dd>utilizado para sua página atualizar sozinha</dd>
+    </dl>
+    <b><p>PS: tudo é escrito no atributo content="" após escrever o atributo desejado acima.</b> <br><br>
+    - Exemplos no HEAD da página. -</p>
 </body>
 </html>
