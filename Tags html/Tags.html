@@ -228,5 +228,59 @@
         <h3>*Este passo a passo foi feito no vídeo acima.*</h3>
         <h4>*NÃO ESQUEÇA DE ATIVAR AS LEGENDAS NO VÍDEO*</h4>
     </p>
+    <br><br>
+    <h1>formulário:</h1>
+    <p>
+        Criado a partir da tag <b>"form"</b> dentro do form são colocadas 3 tags <b>"input"</b> para o usuário, senha e o botão de submit. Também é necessário adicionar alguns atributos. <br>EX.:
+    </p>
+    <form action="perfil.html" method="POST">
+        <fieldset>
+            <legend>Faça seu login</legend>
+            Usuário: <br> 
+            <input type="text" id="usuario"> <br>
+            Senha: <br> 
+            <input type="password" id="senha"> <br>
+            <input type="submit" value="Enviar">
+        </fieldset>
+    </form>
+    <p>
+        Também é possível adicionar uma borda e uma legenda para o formulário, utilizando o <b>"fieldset" e "legend"</b>, como no exemplo acima. <br><br>
+        Utilizando esses os seguintes atributos no input você poderá:
+        <ul>
+            <li>"required": Deixa o campo obrigatório.</li>
+            <li>"autofocus": Deixa o campo pronto pra receber algum conteudo.</li>
+            <li>"disabled": Você deixa um campo desabilitado.</li>
+            <li>"maxlength": Máximo de caracteres aceitos.</li>
+        </ul>
+    </p>
+    <br>
+    <h2>input:</h2>
+    <p>
+        Há diversos tipos de inputs, o que diferencia um do outro é o atributo <b>"type"</b>. <br>EX.:
+    </p>
+    <form action="perfil.html" method="POST">
+        <fieldset>
+            <legend>Faça seu login</legend>
+
+            Usuário: <br>
+            <input type="text" id="usuariotxt"> <br>
+
+            Senha: <br> 
+            <input type="password" id="senhatxt"> <br>
+
+            Email: <br>
+            <input type="email" id="emailtxt"><br><br>
+
+            Sexo: <br>
+            <input type="radio" name="masculino" id="masc" value="masculino"> Masculino <br>
+            <input type="radio" name="feminino" id="femin" value="feminino"> Feminino <br><br>
+
+            Cores: <br>
+            <input type="checkbox" value="verde" id="cores"> Verde <br>
+            <input type="checkbox" value="vermelho" id="cores"> Vermelho <br>
+            <input type="checkbox" value="azul" id="cores"> Azul <br><br>
+            <input type="submit" value="Enviar">  
+        </fieldset>
+    </form>
 </body>
 </html>
