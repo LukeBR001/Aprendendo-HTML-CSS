@@ -172,5 +172,61 @@
     </dl>
     <b><p>PS: tudo é escrito no atributo content="" após escrever o atributo desejado acima.</b> <br><br>
     - Exemplos no HEAD da página. -</p>
+    <br><br>
+
+    <h1>Audio:</h1>
+    <p>
+        Inserimos audios na página com a tag <b>"audio"</b>.
+        Para selecionaer o audio desejado, utiliza-se a tag <b>"source"</b> com atributo src.
+    </p>
+    <p>
+        Para aparecer os controles do audio(play, stop, volume, etc) é necessário utilizar o atributo <b>"controls"</b> na tag audio. <br>EX.:
+    </p>
+    <audio controls>
+        <source src="/audios/aplausos.mp3">
+    </audio>
+    <p>Outros atributos para tag audio são:</p>
+    <dl>
+        <b><dt>autoplay:</dt></b>
+        <dd>Faz o audio ser executado assim que abrir a página.</dd>
+        <b><dt>loop:</dt></b>
+        <dd>Faz o audio se repetir automaricamente.</dd>
+    </dl>
+    <br><br>
+
+    <h1>Vídeo:</h1>
+    <p>
+        Para implementar um vídeo é o mesmo princípio do audio. Para inserir videos usa-se a tag <b>"video"</b> e nela o atributo <b>"controls"</b>. Dentro da tag video, usa-se a tag source com atributo src e type. <br>EX.:
+    </p>
+    <video controls>
+        <source src="/videos/steveVai-FTLOG.mp4" type="video/mp4">
+        <track kind="subtitles" srclang="pt-BR" label="PT-BR" src="/videos/legendaFTLOG.vtt"></track>
+
+    </video>
+    <p>Também é possivel controlar o tamanho da tela de video com <b>width e heigth</b>. <br>A tag video tbm recebe os atributos <b>autoplay, loop, etc.</b></p>
+    <h2>Legendas</h2>
+    <p>Para adicionar legendas no seu vídeo é preciso seguir os passos a seguir:</p>
+    <ol>
+        <li>Criar tag "track".</li></b>
+        <li>Adicionar os atributos:</li>
+            <ul>
+                <li>kind="subtitles"</li>
+                <li>srclang="pt-br"</li>
+                <li>label="PT-BR"</li>
+                <li>src="nomeArquivo.vtt"</li>
+            </ul>
+        <li>Fechar tag "track".</li>
+        <li>Criar um arquivo com o nome nomeArquivo.vtt .</li>
+    </ol>
+    <p><b>Neste novo arquivo você irá escrever:</b> <br><br>
+        <b>WEBVTT</b> <br><br>
+        <b>00:00:01.000 --> 00:00:05.000</b> (Essa será a referência em qual momento(hora:minuto:segundo:milesimo) entra e sai a legenda.) <br>
+        <b>Olá, tudo bem?</b>(essa será a legenda)<br><br>
+        <b>00:00:06.000 --> 00:00:10.000</b> <br>
+        <b>Assim que bota legenda no vídeo kk</b>
+        <br>
+        <h3>*Este passo a passo foi feito no vídeo acima.*</h3>
+        <h4>*NÃO ESQUEÇA DE ATIVAR AS LEGENDAS NO VÍDEO*</h4>
+    </p>
 </body>
 </html>
